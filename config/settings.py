@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-zkeo!wvszy$v*5+)um!%%qfp8_48y%@8t_4l7m5pvm892_p!3#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "quizmaster-backend-39nr.onrender.com",
+]
 
 
 # Application definition
