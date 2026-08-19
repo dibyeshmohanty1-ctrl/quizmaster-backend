@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-
+from django.http import JsonResponse
 from dashboard.views import LeaderboardView
 
 from rest_framework_simplejwt.views import (
@@ -10,7 +10,11 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-
+def home(request):
+    return JsonResponse({
+        "status": "Backend Running",
+        "project": "QuizMaster"
+    })
 urlpatterns = [
 
     path(
