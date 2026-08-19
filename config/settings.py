@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "quizmaster-backend-39nr.onrender.com",
+    "quizmaster-backend-1-3g2m.onrender.com",
 ]
 
 
